@@ -4,6 +4,7 @@ if string.sub(system.getInfo("model"),1,4) == "iPad" then
         content =
         {
             width = 360,
+            graphicsCompatibility = 1,
             height = 480,
             scale = "letterBox",
             xAlign = "center",
@@ -28,7 +29,8 @@ elseif string.sub(system.getInfo("model"),1,2) == "iP" and display.pixelHeight >
     application = 
     {
         content =
-        {
+        {   
+            graphicsCompatibility = 1,
             width = 320,
             height = 568,
             scale = "letterBox",
@@ -55,6 +57,7 @@ elseif string.sub(system.getInfo("model"),1,2) == "iP" then
     {
         content =
         {
+            graphicsCompatibility = 1,
             width = 320,
             height = 480,
             scale = "letterBox",
@@ -80,6 +83,7 @@ elseif display.pixelHeight / display.pixelWidth > 1.72 then
     {
         content =
         {
+            graphicsCompatibility = 1,
             width = 320,
             height = 570,
             scale = "letterBox",
@@ -97,6 +101,7 @@ else
     {
         content =
         {
+            graphicsCompatibility = 1,
             width = 320,
             height = 512,
             scale = "letterBox",
